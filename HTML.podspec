@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "HTML"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "A small framework to monitor network changes in Swift."
   spec.description  = <<-DESC
                     HTML is a small and lightweight Swift framework that allows to monitor and being notified for network status changes in a super-easy way!
