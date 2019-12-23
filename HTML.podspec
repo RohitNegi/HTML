@@ -11,6 +11,20 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "12.0"
   spec.source       = { :http => 'file:' + __dir__ + "/" }
   spec.source       = { :git => "https://github.com/RohitNegi/HTML.git", :tag => "#{spec.version}" }
-  spec.source_files = "HTML/Source"
+  spec.source_files = 'HTML/Source/HtmlElementParsing/*.swift', 'HTML/Source/HtmlElementParsing/Commons/*.swift', 'HTML/Source/HtmlElementParsing/Elements/*.swift'
   spec.swift_version = "5.0"
+
+ # spec.subspec 'Commons' do |co|
+  #  co.source_files   = 'HTML/**/.*{swift}'
+
+  #end
+
+  #spec.subspec 'Elements' do |el|
+   # el.source_files   = 'HTML/Source/HtmlElementParsing/Elements/.*{swift}'
+  #end
+
+  #spec.subspec 'HtmlElementParsing' do |pa|
+   # pa.source_files   = 'HTML/Source/HtmlElementParsing/*.*'
+  #end
+
 end
